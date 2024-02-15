@@ -1,0 +1,199 @@
+/* styles.css */
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    min-height:100%;
+    width: 100%;
+    height: 80vh;
+    background: whitesmoke;
+    overflow: hidden;
+  }
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+}
+.sweetestheart-container {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ANIMATION */
+@keyframes color-change {
+  0% {
+    background: #DC143C;
+  }
+  25% {
+    background: purple;
+  }
+  50% {
+    background: white;
+  }
+  75% {
+    background: #E0115F;
+  }
+  100% {
+    background: #DC143C;
+  }
+}
+
+/* HEART */
+
+.sweetestheart {
+  background-color: #DC143C;
+  position: relative;
+  transform: rotate(-45deg);
+  width: 50px;
+  height: 50px;
+}
+.sweetestheart:before,
+.sweetestheart:after {
+  content: "";
+  background-color: #DC143C;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+.sweetestheart:before {
+  top: -25px;
+  left: 0;
+}
+.sweetestheart:after {
+  left: 25px;
+  top: 0;
+}
+.sweetestheart, .sweetestheart:before, .sweetestheart:after {
+  animation-name: color-change;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+/* HEART 2 */
+.sweetestheart-2, .sweetestheart-2:before, .sweetestheart-2:after {
+  animation-delay: 1s;
+}
+/* HEART 3 */
+.sweetestheart-3, .sweetestheart-3:before, .sweetestheart-3:after {
+  animation-delay: 2s;
+}
+
+  /* click me button start */
+  .button{
+    width: 50px;
+    height: 50px;
+    top:69%;
+    position: fixed;
+    left: 80%;
+    margin-top: -45px;
+    margin-left: -50px;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    transition: background 0.5s ease;
+  }
+
+  .button:hover{
+  
+  }
+  .active#heart:before,.active#heart:after{
+    background: purple !important;
+  }
+  #heart {
+      width: 100px;
+      height: 90px;
+      transition: background 0.5s ease;
+  }
+  #heart:before,
+  #heart:after {
+    transition: background 0.5s ease;
+      position: absolute;
+      content: "";
+      left: 50px;
+      top: 0;
+      width: 50px;
+      height: 80px;
+      background: rgb(241, 238, 238);
+      border-radius: 50px 50px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+  }
+  #heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin :100% 100%;
+  }
+/* ---- reset ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.heart-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.heart-container .heart,
+.heart-container .heart svg {
+  width: 100%;
+  height: 100%;
+}
+
+.heart-container .heart {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+}
+
+.heart-container .heart svg {
+  fill: #f44336;
+  fill: url("#MyGradient");
+}
+
+.bottom-text{
+    position:absolute;
+    top:97%;right:39%;
+    margin-top:-110px;
+    margin-right:70px;
+    font:normal 20px Satisfy, cursive;
+    color:rgb(94, 8 ,30);
+    background:#E48397; outline:none;border:none;
+    cursor:pointer;
+    letter-spacing:3px;padding:10px;
+    border-radius: 5px;
+    box-shadow:#f4877b 0px 0px 10px ;
+}
+
+
+#edit{
+	position:absolute;
+	top:100%;right:0;
+	margin-top:-100px;
+	margin-right:60px;
+	font:normal 20px Satisfy, cursive;
+	color:#f4877b;
+	background:black;outline:none;border:none;
+	cursor:pointer;
+	letter-spacing:3px;padding:10px;
+	border-radius: 5px;
+	box-shadow:0px 0px 10px black;
+}
