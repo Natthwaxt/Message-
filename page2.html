@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden Details</title>
+    <link rel="stylesheet" href="./styles_page2.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Puru &#128157; </strong>
+                        <p>
+                            Ani's Sweetheart
+                        <p> The life is colourful, joyful, filled with happiness, when I have "my little girl" with me.
+                            You're an addiction of this addict. Be on the epitome of every addiction of all drugs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="sweetheart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+
+        // Function to toggle the class 'flap' when the envelope is clicked
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+
+        // Function to change the page after 10 seconds
+        setTimeout(() => {
+            window.location.href = 'Page3.html'; // Replace 'newPage.html' with the URL of the desired page
+        }, 15000); // 10000 milliseconds = 10 seconds
+
+    </script>
+</body>
+
+</html>
