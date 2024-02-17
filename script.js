@@ -7,7 +7,7 @@ const divElement = document.querySelector('div'); // Replace 'div' with the ID o
 divElement.addEventListener('click', function() {
   // Delay the page loading by 2 seconds (2000 milliseconds)
   setTimeout(function() {
-    window.location.href = 'page1.html'; // Replace './pages/page1.html' with the URL of your desired page
+    window.location.href = 'page2.html'; // Replace './pages/page1.html' with the URL of your desired page
   }, 2000); // Adjust the delay time as needed
 });
 
