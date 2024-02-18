@@ -112,7 +112,7 @@ body {
   
   }
   .active#heart:before,.active#heart:after{
-    background: purple !important;
+    background: rgb(199, 27, 27) !important;
   }
   #heart {
       width: 100px;
