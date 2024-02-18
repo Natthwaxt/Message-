@@ -133,8 +133,8 @@
 	 border-top-right-radius: 50% 10%;
 	 border-bottom-left-radius: 50% 40%;
 	 border-bottom-right-radius: 50% 40%;
-	 background-color: #c82b60;
-	 box-shadow: 1px -1px 1px 0 #6f1232;
+	 background-color: #fff;
+	 box-shadow: 1px -1px 1px 0 #f1ebeb;
 	 transform: rotate(32deg) scale(1.6, 1.6);
 }
  #castle .shade-wrap #flower-wrap #petal1:before {
