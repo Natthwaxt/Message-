@@ -1,6 +1,3 @@
-
-
-
 var sceneTree = new Scene({
   ".tree" : {
     0: {transform:"scale(0)"},
