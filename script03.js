@@ -1,3 +1,44 @@
+img {
+  --s: 300px; /* image size */
+  
+  width: var(--s);
+  padding: calc(var(--s)/2);
+  box-sizing: border-box;
+  background: #e5414e; /* heart color */
+  aspect-ratio: 1;
+  object-fit: cover;
+  --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+  -webkit-mask-box-image: var(--_m);
+             mask-border: var(--_m);
+  clip-path: polygon(-41% 0,50% 91%, 141% 0);
+  transition: .6s padding-block, padding-inline 0s .6s;
+  cursor: pointer;
+}
+img:hover {
+  padding: 0;
+  transition: .6s padding-inline, padding-block 0s;
+}
+
+/* fallback until better support for mask-border */
+@supports not (-webkit-mask-box-image: var(--_m)) { 
+  img {
+   -webkit-mask: 
+     radial-gradient(at 70% 31%,#000 29%,#0000 30%),
+     radial-gradient(at 30% 31%,#000 29%,#0000 30%),
+     linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  filter: drop-shadow(0 0 10px #cc333f)
+}
+
+
+
 var sceneTree = new Scene({
   ".tree" : {
     0: {transform:"scale(0)"},
